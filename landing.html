@@ -5,116 +5,139 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aircraft Checklist</title>
     <style>
-        /* General Styles */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
-            color: #333;
         }
 
         header {
-            background-color: #4CAF50;
-            padding: 10px 20px;
-            color: white;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            background-color: #333;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
         }
 
         nav ul {
             list-style-type: none;
-            margin: 0;
             padding: 0;
-            display: flex;
         }
 
         nav ul li {
+            display: inline;
             margin-right: 20px;
         }
 
         nav ul li a {
+            color: #fff;
             text-decoration: none;
-            color: white;
-            font-size: 18px;
         }
 
-        .search-bar-container {
-            position: relative;
-        }
-
-        #search-bar {
-            padding: 10px;
-            font-size: 16px;
-            width: 300px;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-        }
-
-        #search-bar:focus {
-            outline: none;
-            border-color: #4CAF50;
+        nav ul li a:hover {
+            text-decoration: underline;
         }
 
         main {
             padding: 20px;
-            text-align: center;
+        }
+
+        form {
+            margin: 20px 0;
+        }
+
+        form input[type="text"] {
+            padding: 8px;
+            font-size: 16px;
+            width: 250px;
+        }
+
+        form button {
+            padding: 8px;
+            font-size: 16px;
+            background-color: #333;
+            color: #fff;
+            border: none;
         }
 
         footer {
             background-color: #333;
-            color: white;
+            color: #fff;
             text-align: center;
-            padding: 10px 0;
-            position: absolute;
+            padding: 10px;
+            position: fixed;
             bottom: 0;
             width: 100%;
-        }
-
-        /* Responsiveness */
-        @media (max-width: 768px) {
-            nav ul {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            #search-bar {
-                width: 100%;
-            }
         }
     </style>
 </head>
 <body>
     <header>
+        <h1>Welcome to Aircraft Checklists</h1>
         <nav>
             <ul>
-                <li><a href="boeing.html">Boeing</a></li>
-                <li><a href="airbus.html">Airbus</a></li>
-                <li><a href="lockheed.html">Lockheed Martin</a></li>
-                <li><a href="embraer.html">Embraer</a></li>
-                <li><a href="bombardier.html">Bombardier</a></li>
+                <li><a href="#boeing">Boeing</a></li>
+                <li><a href="#airbus">Airbus</a></li>
+                <li><a href="#lockheed">Lockheed Martin</a></li>
+                <li><a href="#embraer">Embraer</a></li>
+                <li><a href="#bombardier">Bombardier</a></li>
             </ul>
         </nav>
-        <div class="search-bar-container">
-            <form action="" method="GET">
-                <input type="text" id="search-bar" name="search" placeholder="Search for an aircraft manufacturer..." aria-label="Search for an aircraft manufacturer">
-                <button type="submit">Search</button>
-            </form>
-        </div>
+        <form action="#" method="get">
+            <input type="text" id="search-bar" placeholder="Search for a manufacturer..." name="search">
+            <button type="submit">Search</button>
+        </form>
     </header>
-
+    
     <main>
-        <h1>Welcome to Aircraft Checklists</h1>
-        <p>Use the search bar or select an aircraft manufacturer from the menu above to access the checklist.</p>
+        <section id="boeing">
+            <h2>Boeing Aircraft Checklists</h2>
+            <p>Download Boeing checklists:</p>
+            <ul>
+                <li><a href="boeing_737_checklist.pdf" download>Download Boeing 737 Checklist</a></li>
+                <li><a href="boeing_747_checklist.pdf" download>Download Boeing 747 Checklist</a></li>
+            </ul>
+        </section>
 
-        <!-- Optional Search Result Section -->
-        <p>If you search for a manufacturer, you will be redirected to their checklist page.</p>
+        <section id="airbus">
+            <h2>Airbus Aircraft Checklists</h2>
+            <p>Download Airbus checklists:</p>
+            <ul>
+                <li><a href="airbus_A320_checklist.pdf" download>Download Airbus A320 Checklist</a></li>
+                <li><a href="airbus_A380_checklist.pdf" download>Download Airbus A380 Checklist</a></li>
+            </ul>
+        </section>
+
+        <section id="lockheed">
+            <h2>Lockheed Martin Aircraft Checklists</h2>
+            <p>Download Lockheed Martin checklists:</p>
+            <ul>
+                <li><a href="lockheed_C130_checklist.pdf" download>Download Lockheed C-130 Checklist</a></li>
+                <li><a href="lockheed_F35_checklist.pdf" download>Download Lockheed F-35 Checklist</a></li>
+            </ul>
+        </section>
+
+        <section id="embraer">
+            <h2>Embraer Aircraft Checklists</h2>
+            <p>Download Embraer checklists:</p>
+            <ul>
+                <li><a href="embraer_170_checklist.pdf" download>Download Embraer 170 Checklist</a></li>
+                <li><a href="embraer_190_checklist.pdf" download>Download Embraer 190 Checklist</a></li>
+            </ul>
+        </section>
+
+        <section id="bombardier">
+            <h2>Bombardier Aircraft Checklists</h2>
+            <p>Download Bombardier checklists:</p>
+            <ul>
+                <li><a href="bombardier_CRJ900_checklist.pdf" download>Download Bombardier CRJ900 Checklist</a></li>
+                <li><a href="bombardier_CSeries_checklist.pdf" download>Download Bombardier CSeries Checklist</a></li>
+            </ul>
+        </section>
     </main>
 
     <footer>
-        <p>Aircraft Checklist &copy; 2024</p>
+        <p>&copy; 2024 Aircraft Checklists</p>
     </footer>
-
 </body>
 </html>
