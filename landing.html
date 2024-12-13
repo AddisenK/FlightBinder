@@ -97,13 +97,19 @@
             </ul>
         </nav>
         <div class="search-bar-container">
-            <input type="text" id="search-bar" placeholder="Search for an aircraft manufacturer..." aria-label="Search for an aircraft manufacturer">
+            <form action="" method="GET">
+                <input type="text" id="search-bar" name="search" placeholder="Search for an aircraft manufacturer..." aria-label="Search for an aircraft manufacturer">
+                <button type="submit">Search</button>
+            </form>
         </div>
     </header>
 
     <main>
         <h1>Welcome to Aircraft Checklists</h1>
         <p>Use the search bar or select an aircraft manufacturer from the menu above to access the checklist.</p>
+
+        <!-- Optional Search Result Section -->
+        <p>If you search for a manufacturer, you will be redirected to their checklist page.</p>
     </main>
 
     <footer>
