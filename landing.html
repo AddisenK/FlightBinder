@@ -76,12 +76,32 @@
                         <h2>Popular Aircraft Models</h2>
                     </header>
                     <ul class="popular-aircraft">
-                        <li><a href="#">Cessna 172</a></li>
-                        <li><a href="#">Piper PA-28</a></li>
-                        <li><a href="#">Cirrus SR22</a></li>
-                        <li><a href="#">Boeing 737</a></li>
-                        <li><a href="#">Airbus A320</a></li>
+                        <li><a href="checklist.html?model=Cessna 172">Cessna 172</a></li>
+                        <li><a href="checklist.html?model=Piper PA-28">Piper PA-28</a></li>
+                        <li><a href="checklist.html?model=Cirrus SR22">Cirrus SR22</a></li>
+                        <li><a href="checklist.html?model=Boeing 737">Boeing 737</a></li>
+                        <li><a href="checklist.html?model=Airbus A320">Airbus A320</a></li>
                     </ul>
+                </div>
+            </section>
+
+            <section id="search">
+                <div class="inner">
+                    <header class="major">
+                        <h2>Quick Search</h2>
+                    </header>
+                    <form method="get" action="search-results.html">
+                        <div class="row gtr-uniform">
+                            <div class="col-12">
+                                <input type="text" name="query" id="query" placeholder="Enter aircraft model or keyword" />
+                            </div>
+                            <div class="col-12">
+                                <ul class="actions">
+                                    <li><input type="submit" value="Search" class="primary" /></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </section>
 
@@ -162,7 +182,4 @@
     <script src="assets/js/browser.min.js"></script>
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
-
-</body>
-</html>
+    <script src="assets
