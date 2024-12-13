@@ -1,93 +1,165 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
 <head>
-  <title>Fly Safe with Our Digital Checklist App</title>
-  <link rel="stylesheet" href="assets/css/main.css"> 
+    <title>Aircraft Checklist App - Landing</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 </head>
 <body class="is-preload">
 
-  <div id="wrapper">
+    <div id="wrapper">
 
-    <header id="header" class="alt style2">
-      <a href="index.html" class="logo"><strong>Aircraft Checklist App</strong></a>
-      <nav>
-        <a href="#menu">Menu</a>
-      </nav>
-    </header>
-
-    <nav id="menu">
-      <ul class="links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="landing.html">Landing</a></li>
-        <li><a href="generic.html">Generic</a></li>
-        <li><a href="elements.html">Elements</a></li>
-      </ul>
-      <ul class="actions stacked">
-        <li><a href="checklists.html" class="button primary fit">Download Checklists</a></li>
-      </ul>
-    </nav>
-
-    <section id="banner" class="style2">
-      <div class="inner">
-        <span class="image">
-          <img src="images/pic07.jpg" alt="" />
-        </span>
-        <header class="major">
-          <h1>Streamline Your Flights</h1>
+        <header id="header" class="alt style2">
+            <a href="index.html" class="logo"><strong>Aircraft Checklists</strong> <span>Your Aviation Companion</span></a>
+            <nav>
+                <a href="#menu">Menu</a>
+            </nav>
         </header>
-        <div class="content">
-          <p>Ensure pre-flight and in-flight safety with our comprehensive digital checklist solution.</p>
-        </div>
-      </div>
-    </section>
 
-    <div id="main">
-
-      <section id="one">
-        <div class="inner">
-          <header class="major">
-            <h2>Fly Confidently with Our Features</h2>
-          </header>
-          <ul class="features">
-            <li><span class="icon solid alt fa-check-square"></span> Access to a library of pre-built checklists for various aircraft types.</li>
-            <li><span class="icon solid alt fa-search"></span> Easy search functionality to find the right checklist quickly.</li>
-            <li><span class="icon solid alt fa-eye"></span> Clear and concise formatting for smooth navigation.</li>
-            <li><span class="icon solid alt fa-pencil-alt"></span> Mark items as completed for efficient progress tracking.</li>
+        <nav id="menu">
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="landing.html">Landing</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Manufacturers</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="manufacturer.html?manufacturer=Boeing">Boeing</a></li>
+                        <li><a href="manufacturer.html?manufacturer=Airbus">Airbus</a></li>
+                        <li><a href="manufacturer.html?manufacturer=Cessna">Cessna</a></li>
+                        <li><a href="manufacturer.html?manufacturer=Cirrus">Cirrus</a></li>
+                        <li><a href="manufacturer.html?manufacturer=Piper">Piper</a></li>
+                    </ul>
+                </li>
             </ul>
-        </div>
-      </section>
+            <ul class="actions stacked">
+                <li><a href="#" class="button primary fit">Start Exploring</a></li>
+                <li><a href="#" class="button fit">Sign In</a></li>
+            </ul>
+        </nav>
 
-      <section id="three">
-        <div class="inner">
-          <header class="major">
-            <h2>Get Started Today!</h2>
-          </header>
-          <p>Download our checklists and experience the difference.</p>
-          <ul class="actions">
-            <li><a href="checklists.html" class="button next">Download Checklists</a></li>
-          </ul>
+        <section id="banner" class="style2">
+            <div class="inner">
+                <span class="image">
+                    <img src="images/pic07.jpg" alt="" />
+                </span>
+                <header class="major">
+                    <h1>Streamline Your Flights</h1>
+                </header>
+                <div class="content">
+                    <p>Ensure pre-flight and in-flight safety with our comprehensive digital checklist solution.</p>
+                </div>
+            </div>
+        </section>
+
+        <div id="main">
+
+            <section id="one">
+                <div class="inner">
+                    <header class="major">
+                        <h2>Fly Confidently with Our Features</h2>
+                    </header>
+                    <ul class="features">
+                        <li><span class="icon solid alt fa-check-square"></span> Access to a library of pre-built checklists for various aircraft types.</li>
+                        <li><span class="icon solid alt fa-search"></span> Easy search functionality to find the right checklist quickly.</li>
+                        <li><span class="icon solid alt fa-eye"></span> Clear and concise formatting for smooth navigation.</li>
+                        <li><span class="icon solid alt fa-pencil-alt"></span> Mark items as completed for efficient progress tracking.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="three">
+                <div class="inner">
+                    <header class="major">
+                        <h2>Get Started Today!</h2>
+                    </header>
+                    <p>Download our checklists and experience the difference.</p>
+                    <ul class="actions">
+                        <li><a href="checklists.html" class="button next">Download Checklists</a></li>
+                    </ul>
+                </div>
+            </section>
+
         </div>
-      </section>
+
+        <section id="contact">
+            <div class="inner">
+                <section>
+                    <form method="post" action="#">
+                        <div class="fields">
+                            <div class="field half">
+                                <label for="name">Name</label>
+                                <input type="text" name="name" id="name" />
+                            </div>
+                            <div class="field half">
+                                <label for="email">Email</label>
+                                <input type="text" name="email" id="email" />
+                            </div>
+                            <div class="field">
+                                <label for="message">Message</label>
+                                <textarea name="message" id="message" rows="6"></textarea>
+                            </div>
+                        </div>
+                        <ul class="actions">
+                            <li><input type="submit" value="Send Message" class="primary" /></li>
+                            <li><input type="reset" value="Clear" /></li>
+                        </ul>
+                    </form>
+                </section>
+                <section class="split">
+                    <section>
+                        <div class="contact-method">
+                            <span class="icon solid alt fa-envelope"></span>
+                            <h3>Email</h3>
+                            <a href="mailto:kabrupt@gmail.com">kabrupt@gmail.com</a>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="contact-method">
+                            <span class="icon solid alt fa-phone"></span>
+                            <h3>Phone</h3>
+                            <span>(123) 123-4567</span>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="contact-method">
+                            <span class="icon solid alt fa-home"></span>
+                            <h3>Address</h3>
+                            <span>36 Aviation Lane<br />
+                            VATPAC Street, ST 56789<br />
+                            USA</span>
+                        </div>
+                    </section>
+                </section>
+            </div>
+        </section>
+
+        <footer id="footer">
+            <div class="inner">
+                <ul class="icons">
+                    <li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+                    <li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+                    <li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+                    <li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+                    <li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+                </ul>
+                <ul class="copyright">
+                    <li>&copy; Aircraft Checklist App</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+                </ul>
+            </div>
+        </footer>
 
     </div>
 
-    <section id="contact">
-      <div class="inner">
-        <section>
-          <form method="post" action="#">
-            <div class="fields">
-              <div class="field half">
-                <label for="name">Name</label>
-                <input type="text" name="name" id="name" />
-              </div>
-              <div class="field half">
-                <label for="email">Email</label>
-                <input type="text" name="email" id="email" />
-              </div>
-              <div class="field">
-                <label for="message">Message</label>
-                <textarea name="message" id="message" rows="6"></textarea>
-              </div>
-            </div>
-            <ul class="actions">
-              <li><input type="submit" value="Send Message" class="primary" /></li>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>
