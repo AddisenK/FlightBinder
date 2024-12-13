@@ -3,65 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aircraft Checklist</title>
+    <title>Aircraft Checklists, by: FlightBinder</title>
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(120deg, #d3d3d3, #a9a9a9);
+            background-color: #f4f4f9;
             color: #333;
         }
 
         header {
-            background: #4f4f4f;
-            color: white;
-            padding: 1.5em 1em;
+            background-color: #1a202c;
+            color: #fff;
+            padding: 20px;
             text-align: center;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
 
         header h1 {
+            font-size: 2.5em;
             margin: 0;
-            font-size: 2em;
+        }
+
+        nav {
+            margin-top: 10px;
         }
 
         nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
             display: flex;
             justify-content: center;
-            gap: 15px;
-        }
-
-        nav ul li {
+            list-style: none;
+            padding: 0;
             margin: 0;
+            gap: 20px;
         }
 
         nav ul li a {
-            color: white;
             text-decoration: none;
+            color: #ffdd57;
             font-weight: bold;
-            font-size: 1em;
+            font-size: 1.2em;
         }
 
         nav ul li a:hover {
-            color: #ffdd57;
+            color: #ffd23f;
         }
 
         form {
-            margin-top: 10px;
+            margin-top: 15px;
             display: flex;
             justify-content: center;
         }
 
-        form input[type="text"] {
+        form input {
             padding: 10px;
             font-size: 1em;
-            width: 300px;
             border: 1px solid #ddd;
             border-radius: 5px;
+            width: 250px;
         }
 
         form button {
@@ -69,7 +72,7 @@
             font-size: 1em;
             margin-left: 10px;
             background-color: #ffdd57;
-            color: #4f4f4f;
+            color: #1a202c;
             border: none;
             border-radius: 5px;
             cursor: pointer;
@@ -81,31 +84,31 @@
 
         main {
             padding: 20px;
-            max-width: 900px;
+            max-width: 1200px;
             margin: auto;
         }
 
         section {
-            background: white;
-            border-radius: 8px;
+            background-color: #fff;
+            border-radius: 10px;
             padding: 20px;
             margin-bottom: 20px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         section h2 {
+            font-size: 1.8em;
             margin-top: 0;
-            color: #4f4f4f;
         }
 
         section p {
             font-size: 1.1em;
+            margin-bottom: 15px;
         }
 
         .aircraft-list {
             list-style: none;
             padding: 0;
-            font-size: 1em;
         }
 
         .aircraft-list li {
@@ -114,29 +117,31 @@
 
         .aircraft-list a {
             text-decoration: none;
-            color: #4f4f4f;
+            color: #007bff;
             font-weight: bold;
         }
 
         .aircraft-list a:hover {
-            color: #ff5733;
+            text-decoration: underline;
         }
 
         footer {
-            background: #4f4f4f;
-            color: white;
+            background-color: #1a202c;
+            color: #fff;
             text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin: 0;
             font-size: 0.9em;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to Aircraft Checklists (NOT FOR REAL WORLD USE!)</h1>
+        <h1>Welcome to FlightBinder (NOT FOR REAL WORLD USE!)</h1>
         <nav>
             <ul>
                 <li><a href="#boeing">Boeing</a></li>
