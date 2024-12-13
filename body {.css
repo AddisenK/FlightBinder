@@ -1,35 +1,110 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
+    font-family: 'Open Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
     background-color: #f4f4f9;
     color: #333;
+    line-height: 1.6;
 }
 
 header {
-    background: #007acc;
-    padding: 10px;
+    background: linear-gradient(90deg, #007acc, #005b99);
+    color: white;
+    padding: 20px 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 10px 0 0;
+    text-align: center;
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 20px;
+    display: inline-block;
+    margin: 0 15px;
 }
 
 nav ul li a {
     text-decoration: none;
     color: white;
-    font-weight: bold;
+    font-weight: 600;
+    transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
+    color: #f4f4f9;
     text-decoration: underline;
 }
 
 main {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"],
+input[type="submit"],
+input[type="reset"] {
+    font-family: inherit;
+    margin: 5px 0;
+}
+
+input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    background: #007acc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background: #005b99;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: white;
     margin-top: 20px;
+}
+
+footer .icons {
+    margin: 10px 0;
+}
+
+footer .icons a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 5px;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+footer .icons a:hover {
+    color: #007acc;
 }
