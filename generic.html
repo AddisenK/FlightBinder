@@ -1,91 +1,89 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<title>Aircraft Checklist App - Generic</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<head>
+    <title>Aircraft Checklist App - Generic</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
 
-		<div id="wrapper">
+    <div id="wrapper">
 
-			<header id="header">
-				<a href="index.html" class="logo"><strong>Aircraft Checklists</strong> <span>Your Aviation Companion</span></a>
-				<nav>
-					<a href="#menu">Menu</a>
-				</nav>
-			</header>
+        <header id="header">
+            <a href="index.html" class="logo"><strong>Aircraft Checklists</strong> <span>Your Aviation Companion</span></a>
+            <nav>
+                <a href="#menu">Menu</a>
+            </nav>
+        </header>
 
-			<nav id="menu">
-				<ul class="links">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="search.html">Search Checklists</a></li>
-					<li><a href="about.html">About Us</a></li>
-					<li><a href="download.html">Download Checklists</a></li> 
-					<li><a href="contact.html">Contact</a></li>
-				</ul>
-				<ul class="actions stacked">
-					<li><a href="#" class="button primary fit">Start Exploring</a></li>
-					<li><a href="#" class="button fit">Sign In</a></li>
-				</ul>
-			</nav>
+        <nav id="menu">
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="search.html">Search Checklists</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="download.html">Download Checklists</a></li> 
+                <li><a href="contact.html">Contact</a></li>
 
-			<div id="main" class="alt">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Manufacturers</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="manufacturer.html?manufacturer=Boeing">Boeing</a></li>
+                        <li><a href="manufacturer.html?manufacturer=Airbus">Airbus</a></li>
+                        <li><a href="manufacturer.html?manufacturer=Cessna">Cessna</a></li>
+                        <li><a href="manufacturer.html?manufacturer=Cirrus">Cirrus</a></li>
+                        <li><a href="manufacturer.html?manufacturer=Piper">Piper</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="actions stacked">
+                <li><a href="#" class="button primary fit">Start Exploring</a></li>
+                <li><a href="#" class="button fit">Sign In</a></li>
+            </ul>
+        </nav>
 
-				<section id="one">
-					<div class="inner">
-						<header class="major">
-							<h1>Welcome to Aircraft Checklist App</h1>
-						</header>
-						<p>Streamline your pre-flight and operational procedures with detailed checklists for all major aircraft. Explore our library to ensure a smooth and safe journey.</p>
-						<span class="image main"><img src="images/aircraft-main.jpg" alt="Aircraft" /></span>
-						<p>Our platform offers checklists tailored for a variety of aircraft models. Easily search, view, and **download** the information you need for pre-flight, in-flight, and post-flight operations.</p>
-					</div>
-				</section>
+        <div id="main" class="alt">
 
-			</div>
+            <section id="one">
+                <div class="inner">
+                    <header class="major">
+                        <h1>Welcome to Aircraft Checklist App</h1>
+                    </header>
+                    <p>Streamline your pre-flight and operational procedures with detailed checklists for all major aircraft. Explore our library to ensure a smooth and safe journey.</p>
+                    <span class="image main"><img src="images/aircraft-main.jpg" alt="Aircraft" /></span>
+                    <p>Our platform offers checklists tailored for a variety of aircraft models. Easily search, view, and **download** the information you need for pre-flight, in-flight, and post-flight operations.</p>
+                </div>
+            </section>
 
-			<section id="contact">
-				<div class="inner">
-					<section>
-						<form method="post" action="#">
-							<div class="fields">
-								<div class="field half">
-									<label for="name">Name</label>
-									<input type="text" name="name" id="name" />
-								</div>
-								<div class="field half">
-									<label for="email">Email</label>
-									<input type="text" name="email" id="email" />
-								</div>
-								<div class="field">
-									<label for="message">Message</label>
-									<textarea name="message" id="message" rows="6"></textarea>
-								</div>
-							</div>
-							<ul class="actions">
-								<li><input type="submit" value="Send Message" class="primary" /></li>
-								<li><input type="reset" value="Clear" /></li>
-							</ul>
-						</form>
-					</section>
-					<section class="split">
-						<section>
-							<div class="contact-method">
-								<span class="icon solid alt fa-envelope"></span>
-								<h3>Email</h3>
-								<a href="mailto:kabrupt@gmail.com">kabrupt@gmail.com</a>
-							</div>
-						</section>
-						<section>
-							<div class="contact-method">
-								<span class="icon solid alt fa-phone"></span>
-								<h3>Phone</h3>
-								<span>(123) 123-4567</span>
-							</div>
-						</section>
-						<section>
-							<div class="contact-method">
-								<span class="icon solid alt fa-home"></span>
+            <section id="search">  <div class="inner">
+                    <h2>Search Checklists</h2>
+                    <form method="get" action="search-results.html">
+                        <div class="row gtr-uniform">
+                            <div class="col-12">
+                                <input type="text" name="query" id="query" placeholder="Enter aircraft model or keyword" />
+                            </div>
+                            <div class="col-12">
+                                <ul class="actions">
+                                    <li><input type="submit" value="Search" class="primary" /></li>
+                                    <li><input type="reset" value="Reset" /></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </form>
+                    <p>Search by aircraft model or specific keywords within the checklists.</p>
+                </div>
+            </section>
+
+        </div>
+
+        <section id="contact">
+            <div class="inner">
+                </div>
+        </section>
+
+    </div>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="
