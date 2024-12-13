@@ -1,110 +1,112 @@
 body {
-    font-family: 'Open Sans', Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f9;
-    color: #333;
-    line-height: 1.6;
+  font-family: 'Open Sans', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9; /* Lighter background for better readability */
+  color: #333;
+  line-height: 1.6;
 }
 
 header {
-    background: linear-gradient(90deg, #007acc, #005b99);
-    color: white;
-    padding: 20px 10px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(90deg, #007acc, #005b99);
+  color: white;
+  padding: 20px 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 header .logo {
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    font-weight: bold;
+  font-size: 1.8rem; /* Slightly larger logo */
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 10px 0 0;
-    text-align: center;
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+  text-align: center;
 }
 
 nav ul li {
-    display: inline-block;
-    margin: 0 15px;
+  display: inline-block;
+  margin: 0 20px; /* Increased spacing between menu items */
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-weight: 600;
-    transition: color 0.3s ease;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #f4f4f9;
-    text-decoration: underline;
+  color: #f4f4f9;
+  text-decoration: underline;
 }
 
 main {
-    margin: 20px auto;
-    padding: 20px;
-    max-width: 800px;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 40px auto; /* Increased top margin */
+  padding: 30px;
+  max-width: 800px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Improved input styles */
 input[type="text"],
 input[type="submit"],
 input[type="reset"] {
-    font-family: inherit;
-    margin: 5px 0;
+  font-family: inherit;
+  margin: 10px 0;
+  border-radius: 5px; /* Slightly rounded corners */
 }
 
 input[type="text"] {
-    width: calc(100% - 20px);
-    padding: 10px;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+  width: calc(100% - 20px);
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 input[type="submit"],
 input[type="reset"] {
-    background: #007acc;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background 0.3s ease;
+  background: #007acc;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
 }
 
 input[type="submit"]:hover,
 input[type="reset"]:hover {
-    background: #005b99;
+  background: #005b99;
 }
 
 footer {
-    text-align: center;
-    padding: 10px;
-    background: #333;
-    color: white;
-    margin-top: 20px;
+  text-align: center;
+  padding: 15px;
+  background: #333;
+  color: white;
+  margin-top: 40px; /* Increased bottom margin */
 }
 
 footer .icons {
-    margin: 10px 0;
+  margin: 15px 0;
 }
 
 footer .icons a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 5px;
-    font-size: 1.2rem;
-    transition: color 0.3s ease;
+  color: #fff;
+  text-decoration: none;
+  margin: 0 8px;
+  font-size: 1.3rem;
+  transition: color 0.3s ease;
 }
 
 footer .icons a:hover {
-    color: #007acc;
+  color: #007acc;
 }
