@@ -1,130 +1,35 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Aircraft Checklist App - Landing</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aircraft Checklist</title>
+    <link rel="stylesheet" href="body.css">
+    <script src="generic.js" defer></script>
 </head>
-<body class="is-preload">
-
-    <div id="wrapper">
-
-        <!-- Header -->
-        <header id="header" class="alt style2">
-            <a href="index.html" class="logo"><strong>Aircraft Checklists</strong> <span>Your Aviation Companion</span></a>
-            <nav>
-                <a href="#menu">Menu</a>
-            </nav>
-        </header>
-
-        <!-- Menu -->
-        <nav id="menu">
-            <ul class="links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="landing.html">Landing</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle">Manufacturers</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="manufacturer.html?manufacturer=Boeing">Boeing</a></li>
-                        <li><a href="manufacturer.html?manufacturer=Airbus">Airbus</a></li>
-                        <li><a href="manufacturer.html?manufacturer=Cessna">Cessna</a></li>
-                        <li><a href="manufacturer.html?manufacturer=Cirrus">Cirrus</a></li>
-                        <li><a href="manufacturer.html?manufacturer=Piper">Piper</a></li>
-                    </ul>
-                </li>
-            </ul>
-            <ul class="actions stacked">
-                <li><a href="#" class="button primary fit">Start Exploring</a></li>
-                <li><a href="#" class="button fit">Sign In</a></li>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="boeing.html">Boeing</a></li>
+                <li><a href="airbus.html">Airbus</a></li>
+                <li><a href="lockheed.html">Lockheed Martin</a></li>
+                <li><a href="embraer.html">Embraer</a></li>
+                <li><a href="bombardier.html">Bombardier</a></li>
             </ul>
         </nav>
-
-        <!-- Banner -->
-        <section id="banner" class="style2">
-            <div class="inner">
-                <span class="image">
-                    <img src="images/pic07.jpg" alt="" />
-                </span>
-                <header class="major">
-                    <h1>Welcome to Your Aviation Companion</h1>
-                </header>
-                <div class="content">
-                    <p>Your trusted digital solution for aircraft checklists and safety protocols.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Main Content -->
-        <div id="main">
-
-            <!-- Quick Access Section -->
-            <section id="quick-access">
-                <div class="inner">
-                    <header class="major">
-                        <h2>Quick Access Checklists</h2>
-                    </header>
-                    <ul class="popular-aircraft">
-                        <li><a href="checklists/cessna/Cessna_172.pdf">Cessna 172</a></li>
-                        <li><a href="checklists/piper/Piper_PA-28.pdf">Piper PA-28</a></li>
-                        <li><a href="checklists/cirrus/Cirrus_SR22.pdf">Cirrus SR22</a></li>
-                        <li><a href="checklists/boeing/Boeing_737.pdf">Boeing 737</a></li>
-                        <li><a href="checklists/airbus/Airbus_A320.pdf">Airbus A320</a></li>
-                    </ul>
-                </div>
-            </section>
-
-            <!-- Search Section -->
-            <section id="search">
-                <div class="inner">
-                    <header class="major">
-                        <h2>Search Aircraft Checklists</h2>
-                    </header>
-                    <form method="get" action="search-results.html">
-                        <div class="row gtr-uniform">
-                            <div class="col-12">
-                                <input type="text" name="query" id="query" placeholder="Enter aircraft model or keyword" />
-                            </div>
-                            <div class="col-12">
-                                <ul class="actions">
-                                    <li><input type="submit" value="Search" class="primary" /></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </section>
-
+        <div class="search-bar-container">
+            <input type="text" id="search-bar" placeholder="Search for an aircraft manufacturer..." aria-label="Search for an aircraft manufacturer">
         </div>
+    </header>
 
-        <!-- Footer -->
-        <footer id="footer">
-            <div class="inner">
-                <ul class="icons">
-                    <li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-                    <li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-                    <li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-                    <li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-                    <li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-                </ul>
-                <ul class="copyright">
-                    <li>&copy; Aircraft Checklist App</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
-                </ul>
-            </div>
-        </footer>
+    <main>
+        <h1>Welcome to Aircraft Checklists</h1>
+        <p>Use the search bar or select an aircraft manufacturer from the menu above to access the checklist.</p>
+    </main>
 
-    </div>
-
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
-
+    <footer>
+        <p>Aircraft Checklist &copy; 2024</p>
+    </footer>
 </body>
 </html>
