@@ -139,6 +139,30 @@
         }
     </style>
 </head>
+    <script>
+    document.getElementById("search-button").addEventListener("click", function() {
+        const query = document.getElementById("search-bar").value.toLowerCase();
+        const sections = document.querySelectorAll("section");
+        
+        sections.forEach(section => {
+            const items = section.querySelectorAll("li");
+            let hasMatch = false;
+
+            items.forEach(item => {
+                const text = item.textContent.toLowerCase();
+                if (text.includes(query)) {
+                    item.style.display = "block"; // Show matching item
+                    hasMatch = true;
+                } else {
+                    item.style.display = "none"; // Hide non-matching item
+                }
+            });
+
+            // Show or hide the section based on whether it has matching items
+            section.style.display = hasMatch ? "block" : "none";
+        });
+    });
+</script>
 <body>
     <header>
         <h1>Welcome to FlightBinder (NOT FOR REAL WORLD USE!)</h1>
