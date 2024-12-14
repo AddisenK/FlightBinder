@@ -1,19 +1,19 @@
 <script>
     document.getElementById("search-btn").addEventListener("click", function () {
         const searchBar = document.getElementById("search-bar");
-        const query = searchBar.value.trim().toLowerCase(); // Get the search input and normalize it
-        
+        const query = searchBar.value.trim().toLowerCase(); // Normalize the input
+
         if (query) {
-            const elements = document.querySelectorAll("#header a[id]");
+            const elements = document.querySelectorAll("nav ul li a");
             let found = false;
 
             elements.forEach(element => {
-                const name = element.getAttribute("id").toLowerCase();
+                const name = element.getAttribute("id").toLowerCase(); // Get the ID of each link
 
                 if (name.includes(query)) {
                     found = true;
-                    element.scrollIntoView({ behavior: "smooth", block: "center" }); // Scroll to the element
-                    element.style.backgroundColor = "yellow"; // Highlight the element
+                    element.scrollIntoView({ behavior: "smooth", block: "center" }); // Scroll to the link
+                    element.style.backgroundColor = "yellow"; // Highlight the link
 
                     setTimeout(() => {
                         element.style.backgroundColor = ""; // Remove highlight after 2 seconds
