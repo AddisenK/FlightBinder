@@ -1,0 +1,31 @@
+<script>
+    document.getElementById("search-btn").addEventListener("click", function () {
+        const searchBar = document.getElementById("search-bar");
+        const query = searchBar.value.trim().toLowerCase(); // Get the search input and normalize it
+        
+        if (query) {
+            const elements = document.querySelectorAll("#header a[id]");
+            let found = false;
+
+            elements.forEach(element => {
+                const name = element.getAttribute("id").toLowerCase();
+
+                if (name.includes(query)) {
+                    found = true;
+                    element.scrollIntoView({ behavior: "smooth", block: "center" }); // Scroll to the element
+                    element.style.backgroundColor = "yellow"; // Highlight the element
+
+                    setTimeout(() => {
+                        element.style.backgroundColor = ""; // Remove highlight after 2 seconds
+                    }, 2000);
+                }
+            });
+
+            if (!found) {
+                alert("No matches found. Please try again.");
+            }
+        } else {
+            alert("Please enter a valid search term.");
+        }
+    });
+</script>
