@@ -16,7 +16,7 @@
         header {
             background-color: #1a202c;
             color: #fff;
-            padding: 20px;
+            padding: 10px 20px;
             text-align: center;
             position: sticky;
             top: 0;
@@ -25,7 +25,7 @@
         }
 
         header h1 {
-            font-size: 2.5em;
+            font-size: 1.8em;
             margin: 0;
         }
 
@@ -39,14 +39,15 @@
             list-style: none;
             padding: 0;
             margin: 0;
-            gap: 20px;
+            flex-wrap: wrap;
+            gap: 10px;
         }
 
         nav ul li a {
             text-decoration: none;
             color: #ffdd57;
             font-weight: bold;
-            font-size: 1.2em;
+            font-size: 1em;
         }
 
         nav ul li a:hover {
@@ -54,9 +55,11 @@
         }
 
         form {
-            margin-top: 15px;
+            margin-top: 10px;
             display: flex;
             justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
         }
 
         form input {
@@ -70,7 +73,6 @@
         form button {
             padding: 10px;
             font-size: 1em;
-            margin-left: 10px;
             background-color: #ffdd57;
             color: #1a202c;
             border: none;
@@ -97,12 +99,12 @@
         }
 
         section h2 {
-            font-size: 1.8em;
+            font-size: 1.5em;
             margin-top: 0;
         }
 
         section p {
-            font-size: 1.1em;
+            font-size: 1em;
             margin-bottom: 15px;
         }
 
@@ -137,9 +139,70 @@
             margin: 0;
             font-size: 0.9em;
         }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.5em;
+            }
+
+            nav ul {
+                gap: 5px;
+            }
+
+            nav ul li a {
+                font-size: 0.9em;
+            }
+
+            form input {
+                width: 200px;
+                font-size: 0.9em;
+            }
+
+            form button {
+                font-size: 0.9em;
+                padding: 8px;
+            }
+
+            section h2 {
+                font-size: 1.3em;
+            }
+
+            section p {
+                font-size: 0.9em;
+            }
+
+            .aircraft-list a {
+                font-size: 0.9em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                padding: 10px;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            form {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            form input {
+                width: 100%;
+            }
+
+            form button {
+                width: 100%;
+            }
+        }
     </style>
 </head>
-    
+
 <body>
     <header>
         <h1>Welcome to FlightBinder (NOT FOR REAL WORLD USE!)</h1>
@@ -150,8 +213,8 @@
                 <li><a href="#lockheed">Lockheed Martin</a></li>
                 <li><a href="#embraer">Embraer</a></li>
                 <li><a href="#bombardier">Bombardier</a></li>
-                <li><a href="#Cessna">Cessna</a></li>
-                <li><a href="#Beachcraft">Beachcraft</a></li>
+                <li><a href="#cessna">Cessna</a></li>
+                <li><a href="#beachcraft">Beachcraft</a></li>
            </ul>
         </nav>
         <form action="#" method="get">
