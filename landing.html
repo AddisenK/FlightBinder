@@ -219,10 +219,10 @@
         </nav>
         <form id="search-form" onsubmit="return false;">
             <input type="text" id="search-bar" placeholder="search field etc...." oninput="searchAircrafts()">
-            <button type="submit">Search?</button>
         </form>
         <div class="dropdown">
-            <select id="aircraft-dropdown">
+            <select id="aircraft-dropdown" onchange="filterAircraftsByManufacturer()">
+                <option value="all">All Manufacturers</option>
                 <option value="#boeing">Boeing</option>
                 <option value="#airbus">Airbus</option>
                 <option value="#lockheed">Lockheed Martin</option>
@@ -313,6 +313,23 @@
     </footer>
 
     <script>
+        // script for drop down menu
+
+        function filterAircraftsByManufacturer() {
+            const dropdown = document.getElementById("aircraft-dropdown");
+            const selectedValue = dropdown.value;
+            const sections = document.querySelectorAll("section");
+
+            sections.forEach(section => {
+                if (selectedValue === "all" || section.id === selectedValue.substring(1)) {
+                    section.style.display = "block";
+                } else {
+                    section.style.display = "none";
+                }
+            });
+        }
+
+
         // js searches for aircraft... only aircraft manufacturer
         function searchAircrafts() {
             const searchTerm = document.getElementById("search-bar").value.toLowerCase();
