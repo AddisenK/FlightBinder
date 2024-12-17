@@ -217,9 +217,9 @@
                 <li><a href="#beachcraft">Beachcraft</a></li>
           </ul>
         </nav>
-        <form action="#" method="get">
-            <input type="text" id="search-bar" placeholder="Search for an Aircraft" name="search">
-            <button type="submit">Search</button>
+        <form id="search-form" onsubmit="return false;">
+            <input type="text" id="search-bar" placeholder="search field etc...." oninput="searchAircrafts()">
+            <button type="submit">Search?</button>
         </form>
         <div class="dropdown">
             <select id="aircraft-dropdown">
@@ -256,7 +256,7 @@
                 <li><a href="https://www.scribd.com/document/739682403/Airbus-a220-Normal-Checklist" target="_blank">Airbus A220 Checklist</a></li>
                 <li><a href="https://flyuk.aero/assets/downloads/resources/checklists/UKV-PRD-A320-CHECKLIST-V5.pdf" target="_blank">Airbus A320 Checklist</a></li>
                 <li><a href="https://www.flight-office.com/xplane/Checklist.pdf" target="_blank">Airbus A330 Checklist</a></li>
-                <li><a href="https://simmerdream.com/wp-content/uploads/2020/12/A350-CHECKLIST.pdf" target="_blank">Airbus A350 Checklist</a></li>k
+                <li><a href="https://simmerdream.com/wp-content/uploads/2020/12/A350-CHECKLIST.pdf" target="_blank">Airbus A350 Checklist</a></li>
                 <li><a href="https://flightsim.to/file/84091/airbus-a380-step-by-step-checklist-as-pdf" target="_blank">Airbus A380 Checklist</a></li>
             </ul>
         </section>
@@ -311,5 +311,38 @@
     <footer>
         &copy; 2024 FlightBinder | All rights reserved | Not for real-world aviation use.
     </footer>
+
+    <script>
+        // js searches for aircraft... only aircraft manufac
+        function searchAircrafts() {
+            const searchTerm = document.getElementById("search-bar").value.toLowerCase();
+            const sections = document.querySelectorAll("section");
+
+            // filter for search.
+            sections.forEach(section => {
+                const listItems = section.querySelectorAll("ul.aircraft-list li");
+                let matchFound = false;
+
+                
+                listItems.forEach(item => {
+                    const linkText = item.textContent.toLowerCase();
+                    if (linkText.includes(searchTerm)) {
+                        item.style.display = "block"; // shows matches for search term
+                        matchFound = true;
+                    } else {
+                        item.style.display = "none"; // hides anything that doesn't match search term
+                    }
+                });
+
+                // no matches will show blank
+                if (!matchFound) {
+                    section.style.display = "none";
+                } else {
+                    section.style.display = "block";
+                }
+            });
+        }
+    </script>
+
 </body>
 </html>
