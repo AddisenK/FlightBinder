@@ -16,7 +16,7 @@
         header {
             background-color: #1a202c;
             color: #fff;
-            padding: 10px 20px;
+            padding: 20px;
             text-align: center;
             position: sticky;
             top: 0;
@@ -25,8 +25,9 @@
         }
 
         header h1 {
-            font-size: 1.8em;
+            font-size: 3.5em; /* Increased font size */
             margin: 0;
+            font-weight: bold;
         }
 
         nav {
@@ -39,7 +40,6 @@
             list-style: none;
             padding: 0;
             margin: 0;
-            flex-wrap: wrap;
             gap: 10px;
         }
 
@@ -47,103 +47,16 @@
             text-decoration: none;
             color: #ffdd57;
             font-weight: bold;
-            font-size: 1em;
+            font-size: 1.2em;
         }
 
         nav ul li a:hover {
             color: #ffd23f;
         }
 
-        form {
-            margin-top: 10px;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-
-        form input {
-            padding: 10px;
-            font-size: 1em;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            width: 250px;
-        }
-
-        form button {
-            padding: 10px;
-            font-size: 1em;
-            background-color: #ffdd57;
-            color: #1a202c;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        form button:hover {
-            background-color: #ffd23f;
-        }
-
-        main {
-            padding: 20px;
-            max-width: 1200px;
-            margin: auto;
-        }
-
-        section {
-            background-color: #fff;
-            border-radius: 10px;
-            padding: 20px;
-            margin-bottom: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        section h2 {
-            font-size: 1.5em;
-            margin-top: 0;
-        }
-
-        section p {
-            font-size: 1em;
-            margin-bottom: 15px;
-        }
-
-        .aircraft-list {
-            list-style: none;
-            padding: 0;
-        }
-
-        .aircraft-list li {
-            margin: 10px 0;
-        }
-
-        .aircraft-list a {
-            text-decoration: none;
-            color: #007bff;
-            font-weight: bold;
-        }
-
-        .aircraft-list a:hover {
-            text-decoration: underline;
-        }
-
-        footer {
-            background-color: #1a202c;
-            color: #fff;
-            text-align: center;
-            padding: 15px;
-            margin-top: 20px;
-        }
-
-        footer p {
-            margin: 0;
-            font-size: 0.9em;
-        }
-
-        /* Responsive Design */
         @media (max-width: 768px) {
             header h1 {
-                font-size: 1.5em;
+                font-size: 2.5em; /* Adjusted font size for tablets */
             }
 
             nav ul {
@@ -151,29 +64,7 @@
             }
 
             nav ul li a {
-                font-size: 0.9em;
-            }
-
-            form input {
-                width: 200px;
-                font-size: 0.9em;
-            }
-
-            form button {
-                font-size: 0.9em;
-                padding: 8px;
-            }
-
-            section h2 {
-                font-size: 1.3em;
-            }
-
-            section p {
-                font-size: 0.9em;
-            }
-
-            .aircraft-list a {
-                font-size: 0.9em;
+                font-size: 1em;
             }
         }
 
@@ -182,22 +73,17 @@
                 padding: 10px;
             }
 
+            header h1 {
+                font-size: 1.8em; /* Adjusted font size for phones */
+            }
+
             nav ul {
                 flex-direction: column;
                 gap: 10px;
             }
 
-            form {
-                flex-direction: column;
-                gap: 10px;
-            }
-
-            form input {
-                width: 100%;
-            }
-
-            form button {
-                width: 100%;
+            nav ul li a {
+                font-size: 0.9em;
             }
         }
     </style>
@@ -206,7 +92,7 @@
 <body>
     <header>
         <h1>Welcome to FlightBinder</h1>
-        </nav>
+        <nav>
         <form id="search-form" onsubmit="return false;">
             <input type="text" id="search-bar" placeholder="search field etc...." oninput="searchAircrafts()">
         </form>
