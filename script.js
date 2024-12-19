@@ -35,7 +35,7 @@ function searchAircrafts() {
             }
         });
 
-        // no matches will show blank
+        // no matches will show blank... 
         if (!matchFound) {
             section.style.display = "none";
         } else {
