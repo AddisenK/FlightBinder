@@ -34,46 +34,103 @@
         header h1 span {
             color: #4fd1c5; /* Accent color */
         }
+        
+        nav {
+            margin-top: 10px;
+        }
 
-        .search-container {
-            margin: 40px auto;
+        nav ul {
             display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 15px; /* Spacing between elements */
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            flex-wrap: wrap;
+            gap: 10px;
         }
 
-        .search-container input[type="text"] {
-            width: 300px;
-            padding: 10px 15px;
+        nav ul li a {
+            text-decoration: none;
+            color: #ffdd57;
+            font-weight: bold;
+            font-size: 1em;
+        }
+
+        nav ul li a:hover {
+            color: #ffd23f;
+        }
+
+        form {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        form input {
+            padding: 10px;
             font-size: 1em;
             border: 1px solid #ddd;
             border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 250px;
         }
 
-        .search-container select {
-            width: 300px;
-            padding: 10px 15px;
+        form button {
+            padding: 10px;
             font-size: 1em;
-            border: 1px solid #ddd;
+            background-color: #ffdd57;
+            color: #1a202c;
+            border: none;
             border-radius: 5px;
-            background-color: #fff;
-            color: #333;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
         }
 
-        .search-container select:focus,
-        .search-container input[type="text"]:focus {
-            outline: none;
-            border-color: #4fd1c5;
-            box-shadow: 0 0 5px rgba(79, 209, 197, 0.5);
+        form button:hover {
+            background-color: #ffd23f;
         }
 
         main {
             padding: 20px;
             max-width: 1200px;
             margin: auto;
+        }
+
+        section {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            font-size: 1.5em;
+            margin-top: 0;
+        }
+
+        section p {
+            font-size: 1em;
+            margin-bottom: 15px;
+        }
+
+        .aircraft-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .aircraft-list li {
+            margin: 10px 0;
+        }
+
+        .aircraft-list a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+        }
+
+        .aircraft-list a:hover {
+            text-decoration: underline;
         }
 
         footer {
@@ -95,13 +152,66 @@
                 font-size: 1.5em;
             }
 
-            .search-container input,
-            .search-container select {
-                width: 90%;
+            nav ul {
+                gap: 5px;
+            }
+
+            nav ul li a {
+                font-size: 0.9em;
+            }
+
+            form input {
+                width: 200px;
+                font-size: 0.9em;
+            }
+
+            form button {
+                font-size: 0.9em;
+                padding: 8px;
+            }
+
+            section h2 {
+                font-size: 1.3em;
+            }
+
+            section p {
+                font-size: 0.9em;
+            }
+
+            .aircraft-list a {
+                font-size: 0.9em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                padding: 10px;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            form {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            form input {
+                width: 100%;
+            }
+
+            form button {
+                width: 100%;
             }
         }
     </style>
 </head>
+
+<body>
+    <header>
+        <h1>Welcome to FlightBinder</h1>
 
 <body>
     <header>
