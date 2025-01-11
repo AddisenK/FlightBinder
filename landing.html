@@ -216,35 +216,26 @@
         <form id="search-form" onsubmit="return false;">
             <input type="text" id="search-bar" placeholder="search field etc...." oninput="searchAircrafts()">
         </form>
+
+        <!-- Dropdown Menu (you can add more options here, just follow same format.)-->
         <div class="dropdown">
             <select id="aircraft-dropdown" onchange="filterAircraftsByManufacturer()">
                 <option value="all">All Manufacturers</option>
-                <option value="#boeing">Boeing</option>
                 <option value="#airbus">Airbus</option>
-                <option value="#lockheed">Lockheed Martin</option>
-                <option value="#embraer">Embraer</option>
+                <option value="#beachcraft">Beachcraft</option>
+                <option value="#boeing">Boeing</option>
                 <option value="#bombardier">Bombardier</option>
                 <option value="#cessna">Cessna</option>
-                <option value="#beachcraft">Beachcraft</option>
                 <option value="#cirrus">Cirrus</option>
+                <option value="#embraer">Embraer</option>
+                <option value="#lockheed">Lockheed Martin</option>
             </select>
         </div>
     </header>
 
+    <!-- Checklists below. Follow same format if adding new ones.-->
     
-    <main>
-        <section id="boeing">
-            <h2>Boeing Aircraft Checklists</h2>
-            <p>View Boeing checklists:</p>
-            <ul class="aircraft-list">
-                <li><a href="https://www.atlanticsunairways.com/training/checklist_b727f.pdf" target="_blank">Boeing 727 Checklist</a></li>
-                <li><a href="https://flyuk.aero/assets/downloads/resources/checklists/UKV-PRD-B737-CHECKLIST-V2.pdf" target="_blank">Boeing 737 Checklist</a></li>
-                <li><a href="https://flyuk.aero/assets/downloads/resources/checklists/UKV-PRD-B777-CHECKLIST-V2.pdf" target="_blank">Boeing 777 Checklist</a></li>
-                <li><a href="https://virtualual.com/lib/downloads/vUAL_787_Checklist.pdf" target="_blank">Boeing 787 Checklist</a></li>
-                <li><a href="https://www.onebag.com/popups/747checklist.pdf" target="_blank">Boeing 747 Checklist</a></li>
-            </ul>
-        </section>
-
+    <main>  
         <section id="airbus">
             <h2>Airbus Aircraft Checklists</h2>
             <p>View Airbus checklists:</p>
@@ -260,13 +251,54 @@
             </ul>
         </section>
 
-        <section id="lockheed">
-            <h2>Lockheed Martin Aircraft Checklists</h2>
-            <p>View Lockheed Martin checklists:</p>
+        <section id="beachcraft">
+            <h2>Beachcraft Aircraft Checklists</h2>
+            <p>View Beachcraft checklists:</p>
             <ul class="aircraft-list">
-                <li><a href="https://pdfupload.io/docs/0039c441" target="_blank">Lockheed C-130 Checklist</a></li>
-                <li><a href="https://pdfupload.io/docs/793f176c" target="_blank">Lockheed F-35 Checklist</a></li>
-                <li><a href="https://www.msfs2020.de/index.php?attachment/7102-jds-cl-f-35-lightning-ii-1-0-9-1-26-2-pdf/" target="_blank">Lockheed F-35 Lightning II Checklist</a></li>
+                <li><a href="https://www.flugsimulation-vfr.ch/view/data/7711/PDF/Checklist%20King%20Air%20350.pdf">King Air 360ER</a></li>
+                <li><a href="https://updates.simcoders.com/release/Laminar-B58/REP-b58-checklists-references.pdf">Baron 58</a></li>
+                </ul>
+            </section>
+
+        <section id="boeing">
+            <h2>Boeing Aircraft Checklists</h2>
+            <p>View Boeing checklists:</p>
+            <ul class="aircraft-list">
+                <li><a href="https://www.atlanticsunairways.com/training/checklist_b727f.pdf" target="_blank">Boeing 727 Checklist</a></li>
+                <li><a href="https://flyuk.aero/assets/downloads/resources/checklists/UKV-PRD-B737-CHECKLIST-V2.pdf" target="_blank">Boeing 737 Checklist</a></li>
+                <li><a href="https://flyuk.aero/assets/downloads/resources/checklists/UKV-PRD-B777-CHECKLIST-V2.pdf" target="_blank">Boeing 777 Checklist</a></li>
+                <li><a href="https://virtualual.com/lib/downloads/vUAL_787_Checklist.pdf" target="_blank">Boeing 787 Checklist</a></li>
+                <li><a href="https://www.onebag.com/popups/747checklist.pdf" target="_blank">Boeing 747 Checklist</a></li>
+            </ul>
+        </section>
+
+        <section id="bombardier">
+            <h2>Bombardier Aircraft Checklists</h2>
+            <p>View Bombardier checklists:</p>
+            <ul class="aircraft-list">
+                <li><a href="https://www.scribd.com/document/509106764/Bombardier-CRJ-Series-Normal-Checklist-For-Flight-Crew" target="_blank">Bombardier CRJ900 Checklist</a></li>
+                <li><a href="https://www.scribd.com/document/509106764/Bombardier-CRJ-Series-Normal-Checklist-For-Flight-Crewf" target="_blank">Bombardier CSeries Checklist</a></li>
+                <li><a href="https://flyuk.aero/assets/downloads/resources/checklists/UKV-PRD-DASH8%20Q400-CHECKLIST-V1.pdf" target="_blank">Bombardier Dash-8-Q400 Checklist</a></li>
+            </ul>
+        </section>
+
+        <section id="cessna">
+            <h2>Cessna Aircraft Checklists</h2>
+            <p>View Cessna checklists:</p>
+            <ul class="aircraft-list">
+                <li><a href="https://www.mentoneflyingclub.org/aircraft/12874_CL.pdf" target="_blank">Cessna 172 Checklist</a></li>
+                <li><a href="https://www.aerodynamicaviation.com/wp-content/uploads/2023/05/C150-preflight-emergency-checklist-2023.pdf" target="_blank">Cessna 150 Checklist</a></li>
+                <li><a href="https://ewhitecap.com/files/Citation%20X%20checklist-v2.03.pdf" target="_blank">Cessna Citation X Checklist</a></li>
+                <li><a href="https://blueskyaviation.cz/wp-content/uploads/2023/12/350-NormalChecklist.pdf" target="_blank">Cessna 350</a></li>
+            </ul>
+        </section>
+
+        <section id="Cirrus">
+            <h2>Cirrus Aircraft Checklists</h2>
+            <p>View Cirrus checklists:</p>
+            <ul class="aircraft-list">
+                <li><a href="http://inetefb.com/CheckLists/SR22%20G3%20Turbo%20Checklist.pdf">Cirrus SR22/SR20</a></li>
+                <li><a href="https://pdfupload.io/docs/83cbd262">Cirrus SF50</a></li>
             </ul>
         </section>
 
@@ -280,46 +312,23 @@
             </ul>
         </section>
 
-        <section id="bombardier">
-            <h2>Bombardier Aircraft Checklists</h2>
-            <p>View Bombardier checklists:</p>
+        <section id="lockheed">
+            <h2>Lockheed Martin Aircraft Checklists</h2>
+            <p>View Lockheed Martin checklists:</p>
             <ul class="aircraft-list">
-                <li><a href="https://www.scribd.com/document/509106764/Bombardier-CRJ-Series-Normal-Checklist-For-Flight-Crew" target="_blank">Bombardier CRJ900 Checklist</a></li>
-                <li><a href="https://www.scribd.com/document/509106764/Bombardier-CRJ-Series-Normal-Checklist-For-Flight-Crewf" target="_blank">Bombardier CSeries Checklist</a></li>
-                <li><a href="https://flyuk.aero/assets/downloads/resources/checklists/UKV-PRD-DASH8%20Q400-CHECKLIST-V1.pdf" target="_blank">Bombardier Dash-8-Q400 Checklist</a></li>
-
+                <li><a href="https://pdfupload.io/docs/0039c441" target="_blank">Lockheed C-130 Checklist</a></li>
+                <li><a href="https://pdfupload.io/docs/793f176c" target="_blank">Lockheed F-35 Checklist</a></li>
+                <li><a href="https://www.msfs2020.de/index.php?attachment/7102-jds-cl-f-35-lightning-ii-1-0-9-1-26-2-pdf/" target="_blank">Lockheed F-35 Lightning II Checklist</a></li>
             </ul>
         </section>
 
-        <section id="cessna">
-            <h2>Cessna Aircraft Checklists</h2>
-            <p>View Cessna checklists:</p>
+        <section id="test">
+            <h2>test aircraft</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas similique possimus tempore quis! Maiores sunt saepe laudantium ullam dolore esse, nobis consequatur, necessitatibus provident dolorem voluptatum pariatur explicabo facilis assumenda.</p>
             <ul class="aircraft-list">
-                <li><a href="https://www.mentoneflyingclub.org/aircraft/12874_CL.pdf" target="_blank">Cessna 172 Checklist</a></li>
-                <li><a href="https://www.aerodynamicaviation.com/wp-content/uploads/2023/05/C150-preflight-emergency-checklist-2023.pdf" target="_blank">Cessna 150 Checklist</a></li>
-                <li><a href="https://ewhitecap.com/files/Citation%20X%20checklist-v2.03.pdf" target="_blank">Cessna Citation X Checklist</a></li>
-                <li><a href="https://blueskyaviation.cz/wp-content/uploads/2023/12/350-NormalChecklist.pdf" target="_blank">Cessna 350</a></li>
-                
+                <li><a href="https://google.com">Test link</a></li>
             </ul>
         </section>
-        
-         <section id="Cirrus">
-            <h2>Cirrus Aircraft Checklists</h2>
-            <p>View Cirrus checklists:</p>
-            <ul class="aircraft-list">
-                <li><a href="http://inetefb.com/CheckLists/SR22%20G3%20Turbo%20Checklist.pdf">Cirrus SR22/SR20</a></li>
-                <li><a href="https://pdfupload.io/docs/83cbd262">Cirrus SF50</a></li>
-                
-            </ul>
-        </section>
-        
-         <section id="beachcraft">
-            <h2>Beachcraft Aircraft Checklists</h2>
-            <p>View Beachcraft checklists:</p>
-            <ul class="aircraft-list">
-                <li><a href="https://www.flugsimulation-vfr.ch/view/data/7711/PDF/Checklist%20King%20Air%20350.pdf">King Air 360ER</a></li>
-                <li><a href="https://updates.simcoders.com/release/Laminar-B58/REP-b58-checklists-references.pdf">Baron 58</a></li>
-        
     </main>
 
     <footer>
@@ -342,8 +351,7 @@
                 }
             });
         }
-
-
+        
         // js searches for aircraft... only aircraft manufacturer
         function searchAircrafts() {
             const searchTerm = document.getElementById("search-bar").value.toLowerCase();
@@ -353,7 +361,8 @@
             sections.forEach(section => {
                 const listItems = section.querySelectorAll("ul.aircraft-list li");
                 let matchFound = false;
-
+            
+                // dispalys search results
                 
                 listItems.forEach(item => {
                     const linkText = item.textContent.toLowerCase();
